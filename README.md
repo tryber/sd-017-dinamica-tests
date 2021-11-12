@@ -28,7 +28,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [4 - Implemente os casos de teste para a função `circle`](#4---implemente-os-casos-de-teste-para-a-função-circle)
   - [5 - Implemente a função `createStudent`](#5---implemente-a-função-createstudent)
   - [6 - Implemente os casos de teste para a função `productDetails`](#6---implemente-os-casos-de-teste-para-a-função-productdetails)
-  - [7 - Implemente os testes para o objeto `leap-years`](#7---implemente-os-testes-para-o-objeto-leap-years)
+  - [7 - Implemente os testes para a função `leap-years`](#7---implemente-os-testes-para-a-função-leap-years)
   - [8 - Implemente os casos de teste e a função `myCounter`](#8---implemente-os-casos-de-teste-e-a-função-mycounter)
 
 ---
