@@ -252,7 +252,7 @@ Essa função já está implementada no arquivo `src/productDetails.js`. Escreva
 
   * Será validado se o teste da função `productDetails` verifica se ao receber duas strings, o retorno da função é um array de objetos e se cada objeto contém os dados necessários.
 
-## 7 - Implemente os testes para o objeto `leap-years`
+## 7 - Implemente os testes para a função `leap-years`
 
 Para cada uma delas atribua uma função que realiza a respectiva operação. A função deve receber dois inteiros e retornar um inteiro. Os resultados das divisões devem sempre ser arredondados para baixo. O arquivo `src/leap-years.js` contém o objeto `leap-years` já implementado. Implemente os testes no arquivo `tests/leap-years.spec.js` de forma que garanta o funcionamento correto.
 
