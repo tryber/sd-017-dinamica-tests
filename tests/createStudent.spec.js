@@ -16,6 +16,19 @@ const createStudent = require('../src/createStudent');
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 
-  ESCREVA SEUS TESTES ABAIXO:
 */
+
+const goodPerson = 'Eita pessoa boa!';
+
+describe('5 - Implemente a função `createStudent`', () => {
+  it('Verifica se a função `createStudent` retorna o objeto esperado', () => {
+    const student = createStudent('Leandrão, o Lobo Solitário');
+    const object = {};
+    expect(createStudent()).toBeDefined();
+    expect(typeof student).toBe(typeof object);
+    expect(student.name).toBe('Leandrão, o Lobo Solitário');
+    expect(student.feedback()).toBeDefined();
+    expect(student.feedback()).toBe(goodPerson);
+  })
+});
 

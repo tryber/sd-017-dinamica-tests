@@ -1,7 +1,3 @@
-### Termos de acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
 # Boas vindas ao repositório da dinamica de Testes Unitários!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Atenção a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
@@ -26,13 +22,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Como desenvolver](#como-desenvolver)
   - [EsLint](#eslint)
   - [Requisitos do projeto](#requisitos-do-projeto)
-  - [1 - Implemente os casos de teste para a função `average`](#1---implemente-os-casos-de-teste-para-a-função-average)
-  - [2 - Implemente os casos de teste para a função `numbers`](#2---implemente-os-casos-de-teste-para-a-função-numbers)
-  - [3 - Implemente os casos de teste para a função `vqv`](#3---implemente-os-casos-de-teste-para-a-função-vqv)
+  - [1 - Implemente os casos de teste para a função `boolToWord`](#1---implemente-os-casos-de-teste-para-a-função-booltoword)
+  - [2 - Implemente os casos de teste para a função `countBy`](#2---implemente-os-casos-de-teste-para-a-função-countby)
+  - [3 - Implemente os casos de teste para a função `noOdds`](#3---implemente-os-casos-de-teste-para-a-função-noodds)
   - [4 - Implemente os casos de teste para a função `circle`](#4---implemente-os-casos-de-teste-para-a-função-circle)
-  - [5 - Implemente os casos de teste para a função `createStudent`](#5---implemente-os-casos-de-teste-para-a-função-createstudent)
+  - [5 - Implemente a função `createStudent`](#5---implemente-a-função-createstudent)
   - [6 - Implemente os casos de teste para a função `productDetails`](#6---implemente-os-casos-de-teste-para-a-função-productdetails)
-  - [7 - Implemente os testes para o objeto `calculator`](#7---implemente-os-testes-para-o-objeto-calculator)
+  - [7 - Implemente os testes para o objeto `leap-years`](#7---implemente-os-testes-para-o-objeto-leap-years)
   - [8 - Implemente os casos de teste e a função `myCounter`](#8---implemente-os-casos-de-teste-e-a-função-mycounter)
 
 ---
@@ -182,29 +178,31 @@ Você pode também instalar o plugin do `ESLint` no `VSCode`, bastar ir em exten
 
 ## Requisitos do projeto
 
-## 1 - Implemente os casos de teste para a função `average`
+## 1 - Implemente os casos de teste para a função `boolToWord`
 
-A função average recebe um array (tamanho variável) e retorna a média dos valores recebidos. Caso a função receba algum valor não númerico ou um array vazio, o valor undefined deve ser retornado. Todos os resultados devem ser arredondados para valores inteiros. Ex: 4,6 vira 5; 1,3 vira 1. O arquivo `src/average.js` contém a função `average` já implementada. Implemente os testes no arquivo `tests/average.spec.js` de forma que ela atenda aos testes propostos.
-
-  **O que será avaliado**
-
-  * Será validado se o comportamento da função "average" está correto'.
-
-## 2 - Implemente os casos de teste para a função `numbers`
-
- A função `numbers` recebe um array (tamanho variável) e retorna true se todos os parâmetros forem do tipo 'number' e false caso contrário. Essa função já está implementada no arquivo `src/numbers.js`. Escreva os testes para essa função para garantir que a implementação de `numbers` está correta.
+A função boolToWord recebe um booleano (tamanho variável) e retorna `Yes` ou `No`. O arquivo `src/boolToWord.js` contém a função `boolToWord` já implementada. Implemente os testes no arquivo `tests/boolToWord.spec.js` de forma que ela atenda aos testes propostos.
 
   **O que será avaliado**
 
-  * Será validado se o teste da função `numbers` verifica se o retorno da função é `true` quando o array passado por parâmetro contém somente números.
+  * Será validado se o comportamento da função _boolToWord_ está correto.
 
-## 3 - Implemente os casos de teste para a função `vqv`
+## 2 - Implemente os casos de teste para a função `countBy`
 
-Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado. O arquivo `src/vqv.js` contém a função `vqv` já implementada. Implemente os testes no arquivo `tests/vqv.spec.js` de forma que ela atenda aos testes propostos.
+ A função `countBy` recebe dois números (inteiros) retornando um array dos primeiros (number) multiplos de (value). Essa função já está implementada no arquivo `src/countBy.js`. Escreva os testes para essa função para garantir que a implementação de `countBy` está correta.
 
   **O que será avaliado**
 
-  * Será validado se a função `vqv` retorna a frase esperada com nome e idade.
+  * Será validado se o comportamento da função _countBy_ está correto.
+  
+
+## 3 - Implemente os casos de teste para a função `noOdds`
+
+Uma função que, recebe um array (tamanho variável) e verifica se existe elementos que são números pares, retornando um array que não contêm números impares. O arquivo `src/noOdds.js` contém a função `noOdds` já implementada. Implemente os testes no arquivo `tests/noOdds.spec.js` de forma que ela atenda aos testes propostos.
+
+  **O que será avaliado**
+
+  * Será validado se o comportamento da função _noOdds_ está correto.
+
 
 ## 4 - Implemente os casos de teste para a função `circle`
 
@@ -214,13 +212,13 @@ A função `circle` recebe o raio de um círculo e retorna um objeto contendo su
 
   * Será validado se o teste da função `circle` verifica se ao receber um raio, o retorno da função é um objeto com as informações corretas (Raio, Área e Circunferência).
 
-## 5 - Implemente os casos de teste para a função `createStudent`
+## 5 - Implemente a função `createStudent`
 
 A função `createStudent` recebe como parâmetro um nome, e retorna um objeto contendo duas chaves:
   1. name, contendo o nome passado como parâmetro;
   2. feedback, contendo uma função que retorna a frase 'Eita pessoa boa!' ao ser chamada.
 
-O arquivo `src/createStudent.js` contém a função `createStudent` já implementada. Implemente os testes no arquivo `tests/createStudent.spec.js` de forma que garanta que a implementação de `createStudent` está correta.
+O arquivo `tests/createStudent.spec.js` contém os testes da função `createStudent` já implementados. Implemente a função no arquivo `src/createStudent.js`.
 
   **O que será avaliado**
 
@@ -254,18 +252,13 @@ Essa função já está implementada no arquivo `src/productDetails.js`. Escreva
 
   * Será validado se o teste da função `productDetails` verifica se ao receber duas strings, o retorno da função é um array de objetos e se cada objeto contém os dados necessários.
 
-## 7 - Implemente os testes para o objeto `calculator`
-Desenvolva um objeto calculator que possui quatro chaves:
-  - add;
-  - mult;
-  - div;
-  - sub.
+## 7 - Implemente os testes para o objeto `leap-years`
 
-Para cada uma delas atribua uma função que realiza a respectiva operação. A função deve receber dois inteiros e retornar um inteiro. Os resultados das divisões devem sempre ser arredondados para baixo. O arquivo `src/objCalculator.js` contém o objeto `calculator` já implementado. Implemente os testes no arquivo `tests/objCalculator.spec.js` de forma que garanta o funcionamento correto.
+Para cada uma delas atribua uma função que realiza a respectiva operação. A função deve receber dois inteiros e retornar um inteiro. Os resultados das divisões devem sempre ser arredondados para baixo. O arquivo `src/leap-years.js` contém o objeto `leap-years` já implementado. Implemente os testes no arquivo `tests/leap-years.spec.js` de forma que garanta o funcionamento correto.
 
   **O que será avaliado**
 
-  * Será validado se a função `objCalculator` retorna os valores esperados.
+  * Será validado se a função `leap-years` retorna os valores esperados.
 
 ## 8 - Implemente os casos de teste e a função `myCounter`
 
