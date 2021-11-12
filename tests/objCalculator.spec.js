@@ -1,3 +1,4 @@
+// Importação do objeto calculator, não precisa se preocupar com isso por agora.
 const calculator = require('../src/objCalculator');
 
 /*

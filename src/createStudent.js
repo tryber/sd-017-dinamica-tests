@@ -21,3 +21,4 @@ const createStudent = (name) => ({
 });
 
 module.exports = createStudent;
+// Exportação da função createStudent, não precisa se preocupar com isso por agora.

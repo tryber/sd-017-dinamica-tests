@@ -18,3 +18,4 @@
 const myCounter = () => {};
 
 module.exports = myCounter;
+// Exportação da função myCounter, não precisa se preocupar com isso por agora.

@@ -1,3 +1,4 @@
+// Importação da função productDetails, não precisa se preocupar com isso por agora.
 const productDetails = require('../src/productDetails');
 
 /*

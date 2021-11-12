@@ -27,3 +27,4 @@ const calculator = {
 };
 
 module.exports = calculator;
+// Exportação do objeto calculator, não precisa se preocupar com isso por agora.

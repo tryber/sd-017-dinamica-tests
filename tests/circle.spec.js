@@ -1,6 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
-
 // Importação da função circle, não precisa se preocupar com isso por agora.
 const circle = require('../src/circle');
 

@@ -1,5 +1,4 @@
-/* eslint-disable max-len */
-
+// Importação da função createStudent, não precisa se preocupar com isso por agora.
 const createStudent = require('../src/createStudent');
 
 /*

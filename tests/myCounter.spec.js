@@ -1,3 +1,4 @@
+// Importação da função myCounter, não precisa se preocupar com isso por agora.
 const myCounter = require('../src/myCounter');
 
 /*

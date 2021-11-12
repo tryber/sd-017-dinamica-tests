@@ -40,3 +40,4 @@ const productDetails = (firstProduct, secondProduct) => [
 ];
 
 module.exports = productDetails;
+// Exportação da função productDetails, não precisa se preocupar com isso por agora.
