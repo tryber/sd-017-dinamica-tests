@@ -96,7 +96,7 @@ Você implementará vários testes unitários para garantir que as implementaç�
     * Exemplo: `git checkout master`
   * Agora crie uma branch para qual você vai submeter os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-js-unit-tests`
+    * Exemplo: `git checkout -b joaozinho-dinamica-tests`
 
 4. Faça as alterações em, por exemplo, alguma dos arquivos de teste que precisam de implementação. Por exemplo, a `average.spec.js` em `tests/`:
 
@@ -113,7 +113,7 @@ Você implementará vários testes unitários para garantir que as implementaç�
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 6. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-js-unit-tests`
+  * Usando o exemplo anterior: `git push -u origin joaozinho-dinamica-tests`
 
 7. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do repositório no GitHub
