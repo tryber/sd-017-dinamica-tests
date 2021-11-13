@@ -14,3 +14,7 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     
     ESCREVA SEUS TESTES ABAIXO:
 */
+
+it ('Verifica se a função retorna um valor booleano', () => {
+  expect(boolToWord(true)).toBe('Yes');
+});
