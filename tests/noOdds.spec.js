@@ -12,4 +12,10 @@ Uma função que, recebe um array (tamanho variável) e verifica se existe eleme
 
   ESCREVA SEUS TESTES ABAIXO:
 */
+it ('Verifica se retorna um array', () => {
+  expect(typeof noOdds([1, 2, 3, 4, 5, 6])).toBe('object');
+});
 
+it ('Verifica se retorna um array com números pares', () => {
+  expect(noOdds([1, 2, 3, 4, 5, 6])).toEqual(expect.arrayContaining([2, 4, 6]));
+});
