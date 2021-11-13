@@ -14,3 +14,17 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     
     ESCREVA SEUS TESTES ABAIXO:
 */
+
+describe('Teste do bão', () => {
+  it('Checando se a função existe e se de fato é uma função', () => {
+    expect(boolToWord).toBeDefined();
+    expect(typeof boolToWord).toBe('function');
+  });
+  it('Testando o retorno correto da função', () => {
+    expect(boolToWord([])).toEqual('Yes');
+    expect(boolToWord('')).toEqual('No');
+    expect(boolToWord(true)).toEqual('Yes');
+    expect(boolToWord(false)).toEqual('No');
+    expect(boolToWord('pudim')).toEqual('Yes');
+  });
+});

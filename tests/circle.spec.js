@@ -20,3 +20,14 @@ const circle = require('../src/circle');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Teste do bão', () => {
+  it('Checando se a função existe e se de fato é uma função', () => {
+    expect(circle).toBeDefined();
+    expect(typeof circle).toBe('function');
+  });
+  it('Testando o retorno correto da função', () => {
+    expect(circle(1)).toEqual({ radius: 1, area: 3.14, circumference: 6.28 });
+    expect(circle(7).circumference).toEqual(43.96);
+    expect(parseFloat(circle(3).area.toPrecision(4))).toEqual(28.26);
+  });
+});

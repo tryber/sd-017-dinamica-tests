@@ -28,3 +28,18 @@ const productDetails = require('../src/productDetails');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Teste de bão', () => {
+  it('Checando se a função existe e se de fato é uma função', () => {
+    expect(productDetails).toBeDefined();
+    expect(typeof productDetails).toBe('function');
+  });
+  it('Testando o retorno correto da função', () => {
+    expect(Array.isArray(productDetails('Alcool gel', 'Máscara'))).toBeTruthy();
+    expect(productDetails('Alcool gel', 'Máscara')).toHaveLength(2);
+    productDetails('Alcool gel', 'Máscara').forEach((n) => {
+      expect(typeof n).toBe('object');
+    });
+    const itens = productDetails('Alcool gel', 'Máscara');
+    expect(itens).not.toStrictEqual(itens[0], itens[1]);
+  });
+});
