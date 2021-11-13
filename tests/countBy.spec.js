@@ -21,5 +21,3 @@ it ('Verifica se retorna um array', () => {
 it ('Verifica se são recebidos números', () => {
   expect(countBy(2, 5)).toEqual([2, 4, 6, 8, 10]);
 });
-
-
