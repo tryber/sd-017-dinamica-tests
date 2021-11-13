@@ -20,3 +20,14 @@ const circle = require('../src/circle');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+it ('Verifica se retorna um objeto', () => {
+  expect(typeof circle(1)).toEqual('object');
+});
+
+it ('Verifica se retorna undefined se não for especificado o raio', () => {
+  expect(circle('')).toBeUndefined();
+});
+
+it ('Verifica se circle(1) retorna "{radius: 1, area: 3.14, circumference: 6.28}"', () => {
+  expect(circle(1)).toEqual({radius: 1, area: 3.14, circumference: 6.28});
+});
