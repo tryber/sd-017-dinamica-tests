@@ -13,3 +13,14 @@ Uma função que, recebe um array (tamanho variável) e verifica se existe eleme
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Teste do bão', () => {
+  it('Checando se a função existe e se de fato é uma função', () => {
+    expect(noOdds).toBeDefined();
+    expect(typeof noOdds).toBe('function');
+  });
+  it('Testando o retorno correto da função', () => {
+    expect(noOdds([1, 2, 3, 4, 5, 6])).toEqual([2, 4, 6]);
+    expect(noOdds([-2, 3, 5, 6])).toEqual([-2, 6]);
+    expect(noOdds([1, 3, 5, 7])).toEqual([]);
+  });
+});

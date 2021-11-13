@@ -13,3 +13,13 @@ const myCounter = require('../src/myCounter');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Teste de bão', () => {
+  it('Checando se a função existe e se de fato é uma função', () => {
+    expect(myCounter).toBeDefined();
+    expect(typeof myCounter).toBe('function');
+  });
+  it('Testando o retorno correto da função', () => {
+    const expectedOutput = [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
+    expect(myCounter()).toEqual(expectedOutput);
+  });
+});
