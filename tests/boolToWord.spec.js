@@ -1,4 +1,5 @@
 // Importação da função boolToWord, não precisa se preocupar com isso por agora.
+const { testPathPatternToRegExp } = require('jest-util');
 const boolToWord = require('../src/boolToWord');
 
 /*
@@ -14,3 +15,17 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     
     ESCREVA SEUS TESTES ABAIXO:
 */
+
+describe('Testes: função boolToWord', () => {
+  test('Verificar se boolToWord([]) retorna o resultado esperado', () => {
+    expect(boolToWord([])).toBeTruthy();
+  });
+
+  test('Verificar se boolToWord("") retorna o resultado esperado', () => {
+    expect(boolToWord('')).toBeTruthy();
+  });
+
+  test('Verificar se boolToWord(true) retorna o resultado esperado', () => {
+    expect(boolToWord(true)).toBeTruthy();
+  });
+});
