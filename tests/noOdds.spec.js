@@ -13,3 +13,12 @@ Uma função que, recebe um array (tamanho variável) e verifica se existe eleme
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Testes: função noOdds', () => {
+  test('Verifica se noOdds([1, 2, 3, 4, 5, 6]) retorna [2, 4, 6]', () => {
+    expect(noOdds([1, 2, 3, 4, 5, 6])).toEqual([2, 4, 6]);
+  });
+
+  test('Verifica se noOdds([2, 7, 9, 10, 16]) retorna [2, 10, 16]', () => {
+    expect(noOdds([2, 7, 9, 10, 16])).toEqual([2, 10, 16]);
+  });
+});
