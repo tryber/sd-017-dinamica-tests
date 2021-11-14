@@ -28,3 +28,23 @@ const productDetails = require('../src/productDetails');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+
+const arrProduct = [
+  {
+    name: 'Alcool gel',
+    details: {
+      productId: 'Alcool gel123'
+    }
+  },
+  {
+    name: 'Máscara',
+    details: {
+      productId: 'Máscara123'
+    }
+  }
+]
+
+test('Verifica se ao entrar o nome de dois produtos retorna um array de objetos com seus nomes e detalhes', () => {
+
+  expect(productDetails('Alcool gel', 'Máscara')).toEqual(arrProduct);
+})

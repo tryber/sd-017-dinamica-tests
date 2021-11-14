@@ -20,3 +20,17 @@ const circle = require('../src/circle');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+test('verifica se ao entrar 1 o retorno é {radius: 1, area: 3.14, circumference: 6.28}', () => {
+  expect(circle(1)).toMatchObject({radius: 1, area: 3.14, circumference: 6.28});
+})
+
+test('verifica se ao entrar 7 o retorno é {radius: 1, area: 3.14, circumference: 6.28}', () => {
+  expect(circle(7)).toMatchObject({radius: 7, area: 153.86, circumference: 43.96});
+})
+
+test('verifica se ao entrar 3 o retorno é {radius: 1, area: 3.14, circumference: 6.28}', () => {
+  let retorno = circle(3);
+  retorno.area = Number(retorno.area.toFixed(2));
+  expect(retorno).toEqual({radius: 3, area: 28.26, circumference: 18.84});
+})
+
