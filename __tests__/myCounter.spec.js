@@ -13,9 +13,9 @@ const myCounter = require('../src/myCounter.js');
   ESCREVA SEUS TESTES ABAIXO:
 */
 describe('Requisito 8 - Teste da função myCounter', () => {
-  it('Verifica se a função retorna um array', () => {
-    expect(typeof myCounter()).toEqual('object');
-  });
+  // it('Verifica se a função retorna um array', () => {
+  //   expect(typeof myCounter()).toEqual('object');
+  // });
   it('Verifica se retorna um array com 12 valores', () => {
     expect(myCounter()).toHaveLength(12);
   });
