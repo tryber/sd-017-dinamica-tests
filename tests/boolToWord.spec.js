@@ -18,14 +18,14 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
 
 describe('Testes: função boolToWord', () => {
   test('Verificar se boolToWord([]) retorna o resultado esperado', () => {
-    expect(boolToWord([])).toBeTruthy();
+    expect(boolToWord([])).toBe('Yes');
   });
 
   test('Verificar se boolToWord("") retorna o resultado esperado', () => {
-    expect(boolToWord('')).toBeTruthy();
+    expect(boolToWord('')).toBe('No');
   });
 
   test('Verificar se boolToWord(true) retorna o resultado esperado', () => {
-    expect(boolToWord(true)).toBeTruthy();
+    expect(boolToWord(true)).toBe('Yes');
   });
 });

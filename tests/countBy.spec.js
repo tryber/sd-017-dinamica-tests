@@ -14,4 +14,12 @@ const countBy = require('../src/countBy');
   // ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Testes: função countBy', () => {
+  test('Verifica se countBy(1, 10) retorna [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]', () => {
+    expect(countBy(1, 10)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  });
 
+  test('Verifica se countBy(2, 5) retorna [2, 4, 6, 8, 10]', () => {
+    expect(countBy(2, 5)).toEqual([2, 4, 6, 8, 10]);
+  });
+});
