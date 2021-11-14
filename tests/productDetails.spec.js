@@ -28,3 +28,14 @@ const productDetails = require('../src/productDetails');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Testes: função productDetails', () => {
+  test('Verificar se productDetails("Álcool gel", "Máscara") retorna o esperado', () => {
+    expect(productDetails("Álcool gel", "Máscara")).toMatchObject([{name: 'Álcool gel', details: {productId: 'Álcool gel123'}},
+    {name: 'Máscara', details: {productId: 'Máscara123'}}]);
+  });
+
+  test('Verificar se productDetails("Sabão em pó", "Amaciante") retorna o esperado', () => {
+    expect(productDetails("Sabão em pó", "Amaciante")).toMatchObject([{name: 'Sabão em pó', details: {productId: 'Sabão em pó123'}},
+    {name: 'Amaciante', details: {productId: 'Amaciante123'}}]);
+  });
+});
