@@ -28,5 +28,7 @@ const circle = (radius) => {
   };
 };
 
+console.log(circle(1))
+
 module.exports = circle;
 // Exportação da função circle, não precisa se preocupar com isso por agora.
