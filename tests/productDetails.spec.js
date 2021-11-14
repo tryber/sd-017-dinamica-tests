@@ -27,4 +27,44 @@ const productDetails = require('../src/productDetails');
 
   ESCREVA SEUS TESTES ABAIXO:
 */
-
+describe('Requisito 6 - Teste para verificar se a função está correta', () => {
+  it ('Verifica se retorna um objeto', () => {
+    expect(typeof productDetails()).toEqual('object');
+  });
+  it ('Verifica se ao entrar com o nome de produtos "Alcool gel" e "Máscara" retorna o objeto correto', () => {
+    expect(productDetails('Alcool gel', 'Máscara')).toEqual(
+      [
+        {
+          name: 'Alcool gel',
+          details: {
+            productId: 'Alcool gel123',
+          }
+        },
+        {
+          name: 'Máscara',
+          details: {
+            productId: 'Máscara123',
+          }
+        }
+      ]
+    )
+  });
+  it ('Verifica se os parâmetros são do tipo string', () => {
+    expect(productDetails('Alcool gel', 'Máscara')).toEqual(
+      [
+        {
+          name: expect.any(String),
+          details: {
+            productId: expect.any(String),
+          }
+        },
+        {
+          name: expect.any(String),
+          details: {
+            productId: expect.any(String),
+          }
+        }
+      ]
+    )
+  });
+});
