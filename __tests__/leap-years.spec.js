@@ -29,7 +29,10 @@ describe('Requisito 7 - Verifica função ano bissexto', () => {
   it('Verifica se retorna false em ano não-bissexto', () => {
     expect(isLeapYear(2021)).toBe(false);
   });
-  // it('Verifica se é inserido um valor em numeral', () => {
-  //   expect(isLeapYear(expect.any(Number)));
-  // });
+  it('Verifica se é inserido um valor em numeral', () => {
+    const myMock = jest.fn(2021);
+    // myMock.mockReturnValueOnce(expect.any(Number));
+    myMock.mock.calls[0].toBe(expect.any(Number));
+    // expect(isLeapYear()).toHaveBeenCalledWith(expect.any(Number));
+  });
 });
