@@ -20,3 +20,18 @@ const circle = require('../src/circle');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+describe('Testes: função circle', () => {
+  test('Verifica se circle(1) retorna {radius: 1, area: 3.14, circumference: 6.28}', () => {
+    expect(circle(1)).toMatchObject({radius: 1, area: 3.14, circumference: 6.28});
+  });
+
+  test('Verifica se circle(7) retorna {radius: 7, area: 153.86, circumference: 43.96}', () => {
+    expect(circle(7)).toMatchObject({radius: 7, area: 153.86, circumference: 43.96});
+  });
+
+  test('Verifica se circle(3) retorna {radius: 3, area: 28,26, circumference: 18.84}', () => {
+    expect(parseFloat(circle(3).radius.toPrecision(1))).toBe(3);
+    expect(parseFloat(circle(3).area.toPrecision(4))).toBe(28.26);
+    expect(parseFloat(circle(3).circumference.toPrecision(4))).toBe(18.84);
+  });
+});
