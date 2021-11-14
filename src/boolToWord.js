@@ -10,7 +10,7 @@
     - boolToWord(true) // Retorno: 'Yes';
 */
 
-const boolToWord = (bool) => (bool ? 'Yes' : 'No');
+const boolToWord = (bool) => (bool ? 'sim' : 'NAô');
 
 module.exports = boolToWord;
 // Exportação da função boolToWord, não precisa se preocupar com isso por agora.
