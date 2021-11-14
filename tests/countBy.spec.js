@@ -15,3 +15,15 @@ const countBy = require('../src/countBy');
 */
 
 
+describe('Implementa casos de testes na função countBy `countBy`', () => {
+  it('testa se com parâmetro 1 e 10 o retorno é o indicado', () =>  {
+    expect(countBy(1,10)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+  })
+
+  it('testa se com parâmetro 1 e 10 o retorno é o indicado', () =>  {
+    expect(countBy(2,5)).toEqual([2, 4, 6, 8, 10]);
+
+  })
+
+})
