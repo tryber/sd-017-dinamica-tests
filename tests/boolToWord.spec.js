@@ -1,4 +1,4 @@
-// Importação da função boolToWord, não precisa se preocupar com isso por agora.
+// Importação da função boolToWord, não precisa se preocupar com isso por agora. Por favor.
 const boolToWord = require('../src/boolToWord');
 
 /*
