@@ -1,5 +1,5 @@
 // Importação da função circle, não precisa se preocupar com isso por agora.
-const circle = require('../src/circle');
+const circle = require("../src/circle");
 
 /*
   Essa função recebe o raio de um círculo e retorna um objeto contendo suas informações (Raio, Área e Circunferência).
@@ -21,20 +21,20 @@ const circle = require('../src/circle');
 
 */
 
-describe('Implementa casos de testes na função  `circle`', () => {
-  it('testa se com raio 1, os valores de area e circumreference são os esperados', () =>  {
-    expect(circle(1)).toEqual({radius: 1, area: 3.14, circumference: 6.28});
+describe("Implementa casos de testes na função  `circle`", () => {
+  it("testa se com raio 1, os valores de area e circumreference são os esperados", () => {
+    expect(circle(1)).toEqual({ radius: 1, area: 3.14, circumference: 6.28 });
+  });
 
-  })
+  it("testa se com raio 7, os valores de area e circumreference são os esperados", () => {
+    expect(circle(7)).toEqual({
+      radius: 7,
+      area: 153.86,
+      circumference: 43.96,
+    });
+  });
 
-  it('testa se com raio 7, os valores de area e circumreference são os esperados', () =>  {
-    expect(circle(7)).toEqual({radius: 7, area: 153.86, circumference: 43.96});
-
-  })
-
-  it('testa se com raio 3, os valores de area e circumreference são os esperados', () =>  {
-    expect(circle(3)).toEqual({radius: 3, area: 28.26, circumference: 18.84});
-
-  })
-
-})
+  it("testa se com raio 3, os valores de area e circumreference são os esperados", () => {
+    expect(circle(3)).toEqual({ radius: 3, area: 28.26, circumference: 18.84 });
+  });
+});
