@@ -20,13 +20,16 @@ const isLeapYear = require('../src/leap-years.js');
 */
 
 describe('Requisito 7 - Verifica função ano bissexto', () => {
-  it ('Verifica se retorna um valor booleano', () => {
+  it('Verifica se retorna um valor booleano', () => {
     expect(typeof isLeapYear(2020)).toBe('boolean');
   });
-  it ('Verifica se retorna ano bissexto', () => {
+  it('Verifica se retorna true em ano bissexto', () => {
     expect(isLeapYear(2044)).toBe(true);
   });
-  it ('Verifica se é inserido um valor em numeral', () => {
-    expect(isLeapYear(expect.any(Number)));
+  it('Verifica se retorna false em ano não-bissexto', () => {
+    expect(isLeapYear(2021)).toBe(false);
   });
+  // it('Verifica se é inserido um valor em numeral', () => {
+  //   expect(isLeapYear(expect.any(Number)));
+  // });
 });
