@@ -2,11 +2,6 @@
 node_modules/
 
 
-# Files #
-############
-package-lock.json
-
-
 # Compiled source #
 ###################
 *.com
@@ -30,3 +25,4 @@ package-lock.json
 *.tar
 *.zip
 package.json
+package-lock.json
