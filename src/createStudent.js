@@ -16,12 +16,10 @@
 const feedbackChave = () => 'Eita pessoa boa!';
 
 const createStudent = (namePerson) => ({
-    name: namePerson,
-    feedback: feedbackChave,
-  });
+  name: namePerson,
+  feedback: feedbackChave,
+});
 
 module.exports = createStudent;
 
-// Exportação da função createStudent, não precisa se preocupar com isso por agora.
-
-
+// Exportação da função createStudent, não precisa se preocupar com isso por agora
