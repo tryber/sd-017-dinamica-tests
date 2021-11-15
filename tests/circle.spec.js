@@ -19,4 +19,15 @@ const circle = require('../src/circle');
 
   ESCREVA SEUS TESTES ABAIXO:
 */
-
+describe('Requisito 4 - circle', () => {
+  it('Verifica se passado determinado raio como parâmetro retorna um objeto contendo as informações do círculo (Raio, Área e Circunferência).', () => {
+    expect(circle(1)).toEqual({radius: 1, area: 3.14, circumference: 6.28});
+    expect(circle(7)).toEqual({radius: 7, area: 153.86, circumference: 43.96});
+    const result = circle(3);
+    result.area = Number(circle(3).area.toFixed(2));
+    expect(result).toEqual({radius: 3, area: 28.26, circumference: 18.84});
+  });
+  it('Verifica se retorna undefined se não for especificado um raio como parâmetro', () => {
+    expect(circle()).not.toBeDefined();
+  });
+});
