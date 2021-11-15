@@ -15,7 +15,16 @@
   myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 */
 
-const myCounter = () => {};
+const myCounter = () => {
+  const array = [];
+  for (let i = 0; i <= 3; i += 1) {
+    array.push(i);
+    for (let j = 2; j <= 3; j += 1) {
+      array.push(j);
+    }
+  }
+  return array;
+};
 
 module.exports = myCounter;
 // Exportação da função myCounter, não precisa se preocupar com isso por agora.

@@ -27,4 +27,38 @@ const productDetails = require('../src/productDetails');
 
   ESCREVA SEUS TESTES ABAIXO:
 */
-
+describe('Requisito 6 - productDetails tests', () => {
+  it('Verifica se ao receber duas strings como parâmetro, a função retorna um array de objetos', () => {
+    expect(typeof productDetails('str1','str2') && typeof productDetails('str1', 'str2')[0] && typeof productDetails('str1', 'str2')[1]).toEqual('object');
+  });
+  it('Verifica se cada objeto retorna os dados necessários', () => {
+    expect(productDetails('Alcool gel', 'Máscara')).toEqual([
+      {
+        name: 'Alcool gel',
+        details: {
+          productId: 'Alcool gel123'
+        }
+      },
+      {
+        name: 'Máscara',
+        details: {
+          productId: 'Máscara123'
+        }
+      }
+    ]);
+    expect(productDetails('Água', 'Menta')).toEqual([
+      {
+        name: 'Água',
+        details: {
+          productId: 'Água123'
+        }
+      },
+      {
+        name: 'Menta',
+        details: {
+          productId: 'Menta123'
+        }
+      }
+    ]);
+  });
+});
