@@ -20,3 +20,19 @@ const circle = require('../src/circle');
   ESCREVA SEUS TESTES ABAIXO:
 */
 
+it('Teste se a função circle() não receber um numero como parametro Retorna undefined', () => {
+  expect(circle()).toBeUndefined()
+});
+
+it('Teste se a função circle() ao receber o parametro 1 retorna {radius: 1, area: 3.14, circumference: 6.28}', () => {
+  expect(circle(1)).toEqual({'radius': 1, 'area': 3.14, 'circumference': 6.28})
+});
+
+it('Teste se a função circle() ao receber o parametro 7 retorna {radius: 7, area: 153.86, circumference: 43.96}', () => {
+  expect(circle(7)).toEqual({'radius': 7, 'area': 153.86, 'circumference': 43.96})
+});
+
+it('Teste se a função circle() ao receber o parametro 7 retorna {radius: 3, area: 28,26, circumference: 18.84}', () => {
+  expect(circle(3)).toHaveProperty('area', 28.26)
+  expect(circle(3)).toEqual(28)
+});
