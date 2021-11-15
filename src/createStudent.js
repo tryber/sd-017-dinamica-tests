@@ -13,8 +13,14 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
-
-const createStudent = () => {};
+const feedback = () => 'Eita pessoa boa!';
+const createStudent = (student) => {
+  const studentInfo = {
+    name: student,
+    feedback,
+  };
+  return studentInfo;
+};
 
 module.exports = createStudent;
 // Exportação da função createStudent, não precisa se preocupar com isso por agora.

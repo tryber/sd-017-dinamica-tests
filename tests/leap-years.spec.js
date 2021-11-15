@@ -1,5 +1,5 @@
 // Importação do objeto isLeapYear, não precisa se preocupar com isso por agora.
-const isLeapYear = require('../src/objisLeapYear');
+const isLeapYear = require('../src/leap-years');
 
 /*
   Essa função simplesmente determina se um ano é bissexto ou não e retorna true ou false.
@@ -18,3 +18,13 @@ const isLeapYear = require('../src/objisLeapYear');
 
   ESCREVA SEUS TESTES ABAIXO:
 */
+describe('Requisito 7 - isLeapYear tests', () => {
+  it('Verifica se retorna true caso um ano bissexto é passado como parâmetro', () => {
+    expect(isLeapYear(2020)).toBe(true);
+    expect(isLeapYear(2044)).toBe(true);
+  });
+  it('Verifica se retorna false caso o ano passado como parâmetro não for bissexto', () => {
+    expect(isLeapYear(2021)).toBe(false);
+    expect(isLeapYear(1994)).toBe(false);
+  });
+})

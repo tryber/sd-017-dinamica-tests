@@ -12,4 +12,11 @@ const myCounter = require('../src/myCounter');
 
   ESCREVA SEUS TESTES ABAIXO:
 */
-
+describe('Requisito 8 - myCounter tests', () => {
+  it('Verifica se myCounter é uma função', () => {
+    expect(typeof myCounter).toBe('function');
+  });
+  it('Verifica se myCounter retorna o array esperado', () => {
+    expect(myCounter()).toEqual([0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3]);
+  });
+})
