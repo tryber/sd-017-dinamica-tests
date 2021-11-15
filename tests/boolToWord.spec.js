@@ -14,3 +14,4 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     
     ESCREVA SEUS TESTES ABAIXO:
 */
+const test = () => {};
