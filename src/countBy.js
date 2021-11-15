@@ -23,3 +23,7 @@ const countBy = (value, number) => {
 
 module.exports = countBy;
 // Exportação da função countBy, não precisa se preocupar com isso por agora.
+
+// console.log(
+//   countBy(1, 10)
+//   );
