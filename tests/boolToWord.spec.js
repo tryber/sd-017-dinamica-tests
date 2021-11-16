@@ -13,5 +13,16 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     - boolToWord(true) // Retorno: 'Yes';
     
     ESCREVA SEUS TESTES ABAIXO:
-    
+
 */
+describe('Testes para o boolToWord', () => {
+  test('Verificar se um array vazio retorna Yes', () => {
+    expect(boolToWord([]).toString('Yes'));
+  });
+  test('Verificar se uma string vazia retorna No', () => {
+    expect(boolToWord('').toString('No'));
+  });
+  test('Verificar se um true retorna Yes', () => {
+    expect(boolToWord(true).toString('Yes'));
+  });
+});
