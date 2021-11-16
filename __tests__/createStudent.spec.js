@@ -27,8 +27,7 @@ describe('5 - Implemente a função `createStudent`', () => {
     expect(createStudent()).toBeDefined();
     expect(typeof student).toBe(typeof object);
     expect(student.name).toBe('Leandrão, o Lobo Solitário');
-    expect(student.feedback).toBeDefined();
-    expect(student.feedback).toBe(goodPerson);
-  })
+    expect(student.feedback()).toBeDefined();
+    expect(student.feedback()).toBe(goodPerson);
+  });
 });
-

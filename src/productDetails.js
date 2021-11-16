@@ -23,7 +23,7 @@
     }
   ]
 */
-
+// funcao retorna um objeto
 const productDetails = (firstProduct, secondProduct) => [
   {
     name: firstProduct,

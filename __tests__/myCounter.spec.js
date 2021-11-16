@@ -13,12 +13,19 @@ const myCounter = require('../src/myCounter.js');
   ESCREVA SEUS TESTES ABAIXO:
 */
 describe('Requisito 8 - Teste da função myCounter', () => {
-  it('Verifica se a função retorna um array', () => {
-    expect(typeof myCounter()).toEqual('object');
+  it('Verificações gerais', () => {
+    expect(myCounter).toBeDefined();
   });
+
+  it('Verifica se a função retorna um array', () => {
+    // expect(typeof myCounter()).toEqual('object');
+    expect(Array.isArray(myCounter())).toEqual(true);
+  });
+
   it('Verifica se retorna um array com 12 valores', () => {
     expect(myCounter()).toHaveLength(12);
   });
+
   const counter = myCounter();
   it('Verifica se os valores do array são do tipo número', () => {
     counter.forEach((target) => {

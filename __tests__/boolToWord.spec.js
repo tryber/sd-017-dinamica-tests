@@ -15,6 +15,19 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     ESCREVA SEUS TESTES ABAIXO:
 */
 
-it ('Verifica se a função retorna um valor booleano', () => {
+it('Verifica se a função existe', () => {
+  expect(boolToWord).toBe('function');
+});
+
+it('Verifica se a função retorna um valor booleano', () => {
+  expect(typeof boolToWord(true)).toBe('boolean');
+});
+
+it('Verifica se a função retorna um valor esperado', () => {
   expect(boolToWord(true)).toBe('Yes');
+  expect(boolToWord([])).toBe('Yes');
+  expect(boolToWord('')).toBe('No');
+  expect(boolToWord([1, 2, 3])).toBe('Yes');
+  expect(boolToWord(false)).toBe('No');
+  expect(boolToWord('xablau')).toBe('Yes');
 });
