@@ -9,10 +9,9 @@
     - countBy(2, 5); // Retorna: [2, 4, 6, 8, 10]
 */
 
-const countBy = (value, number) => {
+const myArr = (value, num) => {
   const result = [];
-  const limit = value * number;
-
+  const limit = value * num;
   for (let index = 1; index <= limit; index += 1) {
     if (index % value === 0) {
       result.push(index);
@@ -20,6 +19,14 @@ const countBy = (value, number) => {
   }
   return result;
 };
+
+const countBy = (value, num) => {
+  if (typeof value !== 'number' && typeof num !== 'number') {
+    return 'Apenas números são aceitos.';
+  }
+  return myArr(value, num);
+};
+console.log(countBy(2, 5));
 
 module.exports = countBy;
 // Exportação da função countBy, não precisa se preocupar com isso por agora.

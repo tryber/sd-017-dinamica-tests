@@ -14,4 +14,15 @@ const countBy = require('../src/countBy');
   // ESCREVA SEUS TESTES ABAIXO:
 */
 
+it('Verifica se a função existe', () => {
+  expect(countBy).toBeDefined();
+});
 
+it('Verifica se retorna um array', () => {
+  expect(typeof countBy(2, 5)).toBe('object');
+});
+
+it('Verifica se são recebidos números', () => {
+  expect(countBy(2, 5)).toEqual([2, 4, 6, 8, 10]);
+  expect(countBy(1, 6)).toEqual([1, 2, 3, 4, 5, 6]);
+});
