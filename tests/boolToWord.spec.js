@@ -13,4 +13,5 @@ A função boolToWord recebe um booleano (tamanho variável) e retorna 'Yes' ou 
     - boolToWord(true) // Retorno: 'Yes';
     
     ESCREVA SEUS TESTES ABAIXO:
+    
 */
